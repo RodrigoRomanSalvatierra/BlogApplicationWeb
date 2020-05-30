@@ -1,0 +1,77 @@
+﻿@model BlogApplication.Modelos.Slider
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 class="mt-5 text-center">Editar slider</h3>
+
+@*agregamos al form (enctype="multipart/form-data") para subir que el formulario permita subir archivos*@
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="row px-2 mx-2 border">
+        @*verificar las validaciones del modelo segun los DataAnnotation que asignamos a cada campo*@
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+
+            <div class="form-group row">
+                <div class="col-4">
+                    @* el la etiqueta se mostrara el Nombre que hemos colocado en el Display del modelo Articulo [Display(Name ="")]*@
+                    <label asp-for="Nombre"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    @* el la etiqueta se mostrara el Nombre que hemos colocado en el Display del modelo Articulo [Display(Name ="")]*@
+                    <label asp-for="Estado"></label>
+                </div>
+                <div class="col-8">
+                    <div class="custom-control custom-switch">
+                        <input asp-for="Estado" class="custom-control-input" id="customSwitch1" checked="" a>
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+            </div>
+
+            @*Visualizar la Imagen del Articulo*@
+            
+                <div class="form-group">
+                    <img src="@Model.UrlImagen" width="100%" style="border-radius: 5px; border:1px solid #bbb9b9;" />
+                </div>
+                <div class="form-group row mt-2">
+                    <div class="col-4">
+                        <label asp-for="UrlImagen"></label>
+                    </div>
+                    <div class="col-8">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" name="archivos" id="subidaArchivo" class="custom-file-input">
+                                <label class="custom-file-label" for="inputGroupFile02">Buscar Imagen</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Id">Actualizar</button>
+                        </div>
+                        <div class="col">
+                            <a asp-action="Index" class="btn btn-danger form-control">Volver a lista</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>

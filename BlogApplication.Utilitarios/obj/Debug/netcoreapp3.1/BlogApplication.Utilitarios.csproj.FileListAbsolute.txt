@@ -1,0 +1,9 @@
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\bin\Debug\netcoreapp3.1\BlogApplication.Utilitarios.deps.json
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\bin\Debug\netcoreapp3.1\BlogApplication.Utilitarios.dll
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\bin\Debug\netcoreapp3.1\BlogApplication.Utilitarios.pdb
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\obj\Debug\netcoreapp3.1\BlogApplication.Utilitarios.AssemblyInfoInputs.cache
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\obj\Debug\netcoreapp3.1\BlogApplication.Utilitarios.AssemblyInfo.cs
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\obj\Debug\netcoreapp3.1\BlogApplication.Utilitarios.dll
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\obj\Debug\netcoreapp3.1\BlogApplication.Utilitarios.pdb
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\obj\Debug\netcoreapp3.1\BlogApplication.Utilitarios.csproj.CoreCompileInputs.cache
+F:\Developments\NetCore\BlogApplication\BlogApplication.Utilitarios\obj\Debug\netcoreapp3.1\BlogApplication.Utilitarios.csprojAssemblyReference.cache
